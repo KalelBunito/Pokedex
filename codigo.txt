@@ -1,0 +1,18 @@
+let botaoChecar = document.querySelector("#botao_checar")
+
+botaoChecar.addEventListener('click', ()=>{
+    let caixaTexto = document.querySelector("#input1").value;
+
+    if(caixaTexto % 2 === 0){
+        document.querySelector("#resultado").innerHTML = caixaTexto + " É par";
+    }else{
+        document.querySelector("#resultado").innerHTML = caixaTexto + " É ímpar";
+    }
+})
+
+//Funções/Programas Funcionais
+
+function divisao(a, b){
+    return `A soma dos valores é: ${a / b}`
+}
+console.log(divisao(12, 4))
